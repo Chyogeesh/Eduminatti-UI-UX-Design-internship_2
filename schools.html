@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Schools in Dehradun - Eduminatti</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #333;
+        }
+        .container {
+            width: 375px;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: #005BBB;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .header i {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .hero .search-bar {
+            width: 80%;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+            background-color: #FFFFFF;
+        }
+        /* Filters */
+        .filters {
+            padding: 15px 20px;
+            background-color: #f5f5f5;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .filter-chip {
+            display: inline-block;
+            padding: 8px 15px;
+            margin-right: 10px;
+            border: 2px solid #FFC107;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .filter-chip.active {
+            background-color: #FFC107;
+            color: #005BBB;
+        }
+        /* School Listings */
+        .schools {
+            padding: 20px;
+        }
+        .school-card {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .school-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+-region: contain;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+        .school-info h3 {
+            font-size: 18px;
+            margin: 0 0 5px;
+            color: #005BBB;
+        }
+        .school-info p {
+            font-size: 14px;
+            margin: 0 0 10px;
+            color: #666;
+        }
+        .school-info .cta {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #FFC107;
+            color: #005BBB;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        /* Testimonials */
+        .testimonials {
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .testimonials h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #005BBB;
+        }
+        .testimonial {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            font-style: italic;
+            font-size: 14px;
+        }
+        .testimonial .author {
+            font-weight: bold;
+            color: #005BBB;
+            text-align: right;
+        }
+        /* CTA Section */
+        .cta-section {
+            padding: 20px;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+        .cta-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #005BBB;
+        }
+        .cta-section .cta {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFC107;
+            color: #005BBB;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        /* Footer */
+        .footer {
+            padding: 15px 20px;
+            background-color: #005BBB;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #FFC107;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Eduminatti</h1>
+            <div>
+                <i class="fas fa-search"></i>
+                <i class="fas fa-bars" style="margin-left: 15px;"></i>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Top Schools in Dehradun</h2>
+            <input type="text" class="search-bar" placeholder="Search schools...">
+        </section>
+
+        <!-- Filters -->
+        <section class="filters">
+            <span class="filter-chip">CBSE</span>
+            <span class="filter-chip">ICSE</span>
+            <span class="filter-chip">IB</span>
+            <span class="filter-chip">Boarding</span>
+            <span class="filter-chip">Day</span>
+            <span class="filter-chip">Co-ed</span>
+            <span class="filter-chip">Boys</span>
+            <span class="filter-chip">Girls</span>
+        </section>
+
+        <!-- School Listings -->
+        <section class="schools">
+            <div class="school-card">
+                <img src="https://images.unsplash.com/photo-1621303837374-0f2f472287a5" alt="The Doon School">
+                <div class="school-info">
+                    <h3>The Doon School</h3>
+                    <p>Fees: ₹3-12L/year | Curriculum: ICSE/IB | Boys Boarding</p>
+                    <a href="#" class="cta">View Details</a>
+                </div>
+            </div>
+            <div class="school-card">
+                <img src="https://images.unsplash.com/photo-1590564317749-4598ae133a87" alt="Ecole Globale">
+                <div class="school-info">
+                    <h3>Ecole Globale</h3>
+                    <p>Fees: ₹3-10L/year | Curriculum: CBSE | Girls Boarding</p>
+                    <a href="#" class="cta">View Details</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <h2>What Parents Say</h2>
+            <div class="testimonial">
+                <p>"Eduminatti helped me find the best school for my child!"</p>
+                <p class="author">– Shalini</p>
+            </div>
+            <div class="testimonial">
+                <p>"The counselors were very helpful at every step."</p>
+                <p class="author">– Nakul</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Find the Perfect School</h2>
+            <a href="#" class="cta">Contact Our Counselors</a>
+            <p>List Your School with Us!</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </footer>
+    </div>
+</body>
+</html>
